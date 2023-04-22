@@ -1,8 +1,8 @@
 import Descriptions from "@/components/Descriptions";
+import Navbar from "@/components/Navbar/Navbar";
 import Title from "@/components/Title";
 import useGradient from "@/hooks/useGradient";
 import Head from "next/head";
-import Image from "next/image";
 
 function App() {
   const { current } = useGradient();
@@ -52,38 +52,31 @@ function App() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="relative h-screen" style={{ overflowX: "hidden" }}>
-        <nav className="h-16 text-black mt-4 px-6 md:px-20">
-          <Image
-            src="/logo.svg"
-            alt="Byw Logo"
-            width={100}
-            height={24}
-            priority
-          />
-        </nav>
+        <Navbar />
         <div
-          className="bg-cover md:bg-center lg:bg-right h-full absolute inset-0 lg:translate-x-1/2"
+          className="bg-cover md:bg-center lg:bg-right h-full z-0 absolute inset-0 lg:translate-x-1/2"
           style={{
             backgroundImage: `url('/background.png')`,
           }}
         />
-        <main className="absolute left-1/2 translate-y-5 -translate-x-1/2">
-          <Title current={current} title="Sélectionnez" index={0} />
-          <Title current={current} title="Pariez" index={1} />
-          <Title current={current} title="Analysez" index={2} />
+        <main className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
+          <Title current={current} title="Select" index={0} />
+          <Title current={current} title="Bet" index={1} />
+          <Title current={current} title="Manage" index={2} />
           <div className="flex flex-col items-center mt-20 space-y-10 justify-center">
-            <p className="text-gray-400 lg:w-2/3 text-center text-xl">
-              Betyouwin est la meilleure plateforme d’aide aux parieurs
-              sportifs. L’objectif est de vous donner les meilleures armes pour
-              faire partie de cette élite qui arrive à générer une vraie source
-              de revenus.
+            <p className="text-[#888] text-center text-xl tracking-tight">
+              We are a team of sports enthusiasts, betting experts, and skilled
+              developers who have come together to create a platform that will
+              revolutionize your sports betting experience. Betyouwin is the
+              first platform that allows you to challenge bookmakers on equal
+              terms !
             </p>
             <span></span>
             <div
-              className="px-10 py-3 rounded-md w-full md:w-min text-center"
+              className="px-10 py-3 rounded-md w-full md:w-48 text-center"
               style={buttonStyle}
             >
-              S’inscrire
+              Sign Up
             </div>
           </div>
         </main>
@@ -93,19 +86,19 @@ function App() {
       <section className="bg-[#111] lg:border border-[#333] mt-36 text-center lg:flex lg:divide-x-[1px] space-y-10 md:space-y-0 divide-gray-500 items-center py-8">
         <div className="w-full flex-col items-center justify-center">
           <span className="font-bold tracking-tighter text-6xl">50</span>
-          <p className="text-sm font-semibold text-gray-400 uppercase">
-            leagues
-          </p>
+          <p className="text-sm font-semibold text-[#888] uppercase">leagues</p>
         </div>
         <div className="w-full flex-col items-center justify-center">
           <span className="font-bold tracking-tighter text-6xl">35</span>
-          <p className="text-sm font-semibold text-gray-400 uppercase">pays</p>
+          <p className="text-sm font-semibold text-[#888] uppercase">
+            countries
+          </p>
         </div>
         <div className="w-full flex-col items-center justify-center">
-          <span className="font-bold tracking-tighter text-6xl">100+</span>
-          <p className="text-sm font-semibold text-gray-400 uppercase">
-            matchs par jour
-          </p>
+          <span className="font-bold tracking-tighter text-6xl">
+            100 fixtures
+          </span>
+          <p className="text-sm font-semibold text-[#888] uppercase">day</p>
         </div>
       </section>
     </>

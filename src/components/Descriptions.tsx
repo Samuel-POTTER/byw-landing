@@ -10,22 +10,21 @@ const Descriptions = () => {
           <span>1</span>
         </div>
         <span className="font-bold text-[2rem] mt-10 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-[#51c26f] to-[#f2e901]">
-          Sélectionnez
+          Select
         </span>
         <div className="space-y-14 mt-12 text-center">
           <div className="font-bold text-4xl md:text-5xl lg:text-6xl">
-            Vos matchs en quelques clics
+            Your fixtures in a few clicks
           </div>
           <div className="flex items-center justify-center">
-            <p className="text-gray-400 md:w-2/3 lg:w-1/2 text-xl">
-              Nous vous mettons à disposition toutes les informations pour
-              performer.
+            <p className="text-[#888] md:w-2/3 lg:w-1/2 text-xl">
+              We provide you all information you need to bet smarter
             </p>
           </div>
         </div>
         <div className="grid lg:grid-cols-2 mt-20 md:mt-28">
           <Image
-            src="/image1.png"
+            src="/fixtures-desktop.png"
             alt="Byw Logo"
             className="px-4 md:px-0"
             width={600}
@@ -34,35 +33,34 @@ const Descriptions = () => {
           <div className="lg:px-16 md:mt-6 lg:mt-0 px-6 py-4 space-y-10">
             <div>
               <div className="font-semibold text-[22px] text-center lg:text-start md:text-2xl">
-                Des statistiques détaillées
+                Detailed statistics
               </div>
-              <p className="text-gray-400 text-center lg:text-start lg:w-2/3 font-normal">
-                Analysez rapidement les performances et la forme des équipes
+              <p className="text-[#888] text-center lg:text-start lg:w-2/3 font-normal">
+                to quickly understand the performance and form of the teams
               </p>
             </div>
             <div>
               <div className="font-semibold md:text-2xl text-[22px] text-center lg:text-start">
-                Un système de tri et de filtre
+                A sorting & filtering system
               </div>
-              <p className="text-gray-400 text-center lg:text-start lg:w-2/3 font-normal">
-                Analysez une centaine de matchs en quelques clics
+              <p className="text-[#888] text-center lg:text-start lg:w-2/3 font-normal">
+                to analyze a hundred fixtures in a few seconds
               </p>
             </div>
             <div>
               <div className="font-semibold md:text-2xl text-[22px] text-center lg:text-start">
-                Un pronostic avisé
+                A forecast
               </div>
-              <p className="text-gray-400 text-center lg:text-start lg:w-2/3 font-normal">
-                Produit par une intelligence artificielle
+              <p className="text-[#888] text-center lg:text-start lg:w-2/3 font-normal">
+                produce by an artificial intelligence,
               </p>
             </div>
             <div>
               <div className="font-semibold md:text-2xl text-[22px] text-center lg:text-start">
-                Un indice de confiance
+                A confidence score
               </div>
-              <p className="text-gray-400 text-center lg:text-start lg:w-2/3 font-normal">
-                Issu d’un algorithme complexe, permets de sécuriser au mieux
-                votre pari.
+              <p className="text-[#888] text-center lg:text-start lg:w-2/3 font-normal">
+                resulting from an advanced algorithm, allow you to bet safer
               </p>
             </div>
           </div>
@@ -75,19 +73,19 @@ const Descriptions = () => {
           <span>2</span>
         </div>
         <span className="font-bold text-[2rem] mt-10 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
-          Pariez
+          Bet (coming soon)
         </span>
         <div className="space-y-14 mt-12 flex flex-col items-center text-center">
           <div className="font-bold text-3xl md:text-5xl lg:text-6xl text-center w-2/3">
-            Maximiser vos chances de gain avec notre système de pari BetyouWin
+            Maximize your chances of winning with our BYW betting system
           </div>
           <div className="flex items-center justify-center">
-            <p className="text-gray-400 lg:w-1/3 w-2/3 text-center text-xl">
-              Ce dernier vous permettra de sélectionner plusieurs possibilités,
-              de générer les combinaisons possibles, et enfin de miser de
-              manière <span className="text-[#FF0080]">intelligente</span> pour{" "}
-              <span className="text-[#FF0080]">minimiser</span> les{" "}
-              <span className="text-[#FF0080]">risques</span>.
+            <p className="text-[#888] lg:w-1/3 w-2/3 text-center text-xl">
+              It allow you to select several options, to generate all the
+              combinations
+              <span className="text-[#FF0080]">combinations</span>, and finally
+              to bet <span className="text-[#FF0080]">minimizing</span> the{" "}
+              <span className="text-[#FF0080]">risks</span>.
             </p>
           </div>
         </div>
@@ -99,15 +97,15 @@ const Descriptions = () => {
           <span>3</span>
         </div>
         <span className="font-bold text-[2rem] mt-10 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-[#FF4D4D] to-[#F9CB28]">
-          Analysez
+          Manage (coming soon)
         </span>
         <div className="space-y-14 mt-12 flex flex-col items-center text-center">
           <div className="font-bold text-3xl md:text-5xl lg:text-6xl text-center w-2/3">
-            Assurez un meilleur suivi de votre Bankroll
+            Stay focus on your bankroll management
           </div>
-          <p className="text-gray-400 lg:w-1/3 w-2/3 text-center text-xl">
-            Tracez de manière quasi automatique tous vos paris afin de suivre
-            l’évolution de votre bankroll et donc ainsi adapter votre stratégie.
+          <p className="text-[#888] lg:w-1/3 w-2/3 text-center text-xl">
+            Record almost automatically all your bets, track your results, and
+            analyze your performance to fine-tune your betting strategy.
           </p>
         </div>
       </div>
