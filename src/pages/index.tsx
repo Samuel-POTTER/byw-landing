@@ -54,7 +54,7 @@ function App() {
       <div className="relative h-screen" style={{ overflowX: "hidden" }}>
         <Navbar />
         <div
-          className="bg-cover md:bg-center lg:bg-right h-full z-0 absolute inset-0 lg:translate-x-1/2"
+          className="bg-cover md:bg-center 2xl:bg-right h-full z-0 absolute inset-0 2xl:translate-x-1/2"
           style={{
             backgroundImage: `url('/background.png')`,
           }}

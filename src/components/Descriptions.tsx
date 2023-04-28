@@ -1,5 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import { BiBarChartAlt2, BiFilterAlt } from "react-icons/bi";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { AiOutlineSafety } from "react-icons/ai";
+import Icon from "./Icon/Icon";
+import FeatureDetails from "./FeatureDetails/FeatureDetails";
+import Features from "./Features/Features";
 
 const Descriptions = () => {
   return (
@@ -22,53 +28,19 @@ const Descriptions = () => {
             </p>
           </div>
         </div>
-        <div className="grid lg:grid-cols-2 mt-20 md:mt-28">
+        <div className="grid lg:grid-cols-2 mt-20 md:mt-28 place-items-center">
           <Image
             src="/fixtures-desktop.png"
-            alt="Byw Logo"
-            className="px-4 md:px-0"
-            width={600}
+            alt="fixtures-desktop"
+            width={550}
             height={300}
           />
-          <div className="lg:px-16 md:mt-6 lg:mt-0 px-6 py-4 space-y-10">
-            <div>
-              <div className="font-semibold text-[22px] text-center lg:text-start md:text-2xl">
-                Detailed statistics
-              </div>
-              <p className="text-[#888] text-center lg:text-start lg:w-2/3 font-normal">
-                to quickly understand the performance and form of the teams
-              </p>
-            </div>
-            <div>
-              <div className="font-semibold md:text-2xl text-[22px] text-center lg:text-start">
-                A sorting & filtering system
-              </div>
-              <p className="text-[#888] text-center lg:text-start lg:w-2/3 font-normal">
-                to analyze a hundred fixtures in a few seconds
-              </p>
-            </div>
-            <div>
-              <div className="font-semibold md:text-2xl text-[22px] text-center lg:text-start">
-                A forecast
-              </div>
-              <p className="text-[#888] text-center lg:text-start lg:w-2/3 font-normal">
-                produce by an artificial intelligence,
-              </p>
-            </div>
-            <div>
-              <div className="font-semibold md:text-2xl text-[22px] text-center lg:text-start">
-                A confidence score
-              </div>
-              <p className="text-[#888] text-center lg:text-start lg:w-2/3 font-normal">
-                resulting from an advanced algorithm, allow you to bet safer
-              </p>
-            </div>
-          </div>
+          <Features />
         </div>
       </div>
 
       <div className="flex-col flex items-center">
-        <div className="w-px h-[100px] bg-gradient-to-b from-black to-[#7928CA]" />
+        <div className="w-px h-[100px] relative z-50 bg-gradient-to-b from-black to-[#7928CA]" />
         <div className="w-10 h-10 rounded-full flex items-center justify-center text-center text-black bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
           <span>2</span>
         </div>

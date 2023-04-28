@@ -6,7 +6,7 @@ const Navbar = () => {
   const { push } = useRouter();
 
   return (
-    <div className="h-16 text-black absolute px-6 md:px-72 w-screen z-50 flex justify-between items-center">
+    <div className="h-16 hidden lg:flex text-black absolute px-6 md:px-72 w-screen z-50 justify-between items-center">
       <Image
         className="cursor-pointer"
         onClick={() => push("/")}
